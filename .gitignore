@@ -1,0 +1,137 @@
+# =============================================
+# Medical Insurance Cost Prediction
+# .gitignore File
+# =============================================
+
+# Patient Data & Medical Records
+*.csv
+*.xlsx
+*.xls
+*.json
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Protected Health Information (PHI)
+*.HIPAA
+*.protected
+patient_data/
+medical_records/
+pii_data/
+
+# Model Files
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+models/*
+!models/.gitkeep
+
+# Output Files
+outputs/*
+results/*
+predictions/*
+logs/*
+!outputs/.gitkeep
+!results/.gitkeep
+!predictions/.gitkeep
+!logs/.gitkeep
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+.jupyter/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Operating Systems
+.DS_Store
+Thumbs.db
+.Windows-thumbnail.db
+desktop.ini
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Documentation
+docs/_build/
+site/
+
+# API Keys & Credentials
+secrets.json
+config_prod.json
+*.key
+*.pem
+api_keys.txt
+
+# Temporary Files
+*.tmp
+*.temp
+*~
+*.bak
+*.backup
+
+# System Files
+*.lock
+.cache/
+.sass-cache/
+
+# IDE Specific
+*.code-workspace
+.vscode/settings.json
+.idea/workspace.xml
+
+# Build Artifacts
+build/
+dist/
+*.whl
