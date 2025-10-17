@@ -1,0 +1,199 @@
+MIT License
+
+Copyright (c) 2025 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Medical Insurance Cost Prediction - Disclaimer
+
+### ⚠️ IMPORTANT MEDICAL & LEGAL DISCLAIMER
+
+This software and its predictions are provided strictly for **educational and analytical purposes only**. This is NOT a substitute for professional medical advice, insurance consultation, or legal guidance.
+
+### HIPAA Compliance Notice
+
+This system is designed with healthcare privacy in mind:
+- ✅ No personally identifiable information (PII) is required
+- ✅ No protected health information (PHI) storage
+- ✅ Anonymized analysis only
+- ⚠️ Users are responsible for HIPAA compliance when handling real data
+- ⚠️ Healthcare organizations must implement additional security measures
+
+### Limitations & Disclaimers
+
+**The predictions made by this model are subject to the following limitations:**
+
+1. **Not Medical Advice**
+   - This tool does NOT provide medical advice
+   - For health concerns, consult qualified healthcare professionals
+   - Emergency situations require immediate professional medical attention
+
+2. **Insurance Estimation Only**
+   - Predictions are estimates based on historical data
+   - Actual insurance costs may vary significantly
+   - Multiple factors affect final insurance premiums
+   - Consult licensed insurance agents for accurate quotes
+
+3. **Model Accuracy**
+   - R² Score: 0.75 (explains 75% of variance)
+   - 25% of variation is unexplained
+   - Model trained on historical data with potential biases
+   - May not reflect future market conditions
+
+4. **Data Quality**
+   - Predictions depend on accurate input data
+   - Incomplete or inaccurate data = poor predictions
+   - Data must be recent and representative
+
+5. **No Guarantees**
+   - Authors make NO warranty or guarantee of accuracy
+   - User assumes all risk for predictions made
+   - Do NOT use as sole basis for critical decisions
+
+### Legal Compliance
+
+**Users must ensure compliance with:**
+- HIPAA (Health Insurance Portability and Accountability Act)
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+- State insurance regulations
+- Federal healthcare laws
+- Industry-specific data protection laws
+
+### Insurance Industry Standards
+
+**For insurance professionals:**
+- Underwriting decisions must follow regulatory guidelines
+- This model is ONE tool among many
+- Professional judgment and compliance required
+- Document all decision-making processes
+- Regular model validation and monitoring required
+
+### Healthcare Provider Responsibilities
+
+**If using in healthcare settings:**
+- Verify patient identity and consent
+- Maintain HIPAA-compliant systems
+- Implement proper access controls
+- Audit all predictions and decisions
+- Inform patients of any automated processes
+
+### Data Privacy Protection
+
+**When handling patient or customer data:**
+- ✅ Anonymize all personally identifiable information
+- ✅ Use encrypted connections for data transmission
+- ✅ Store data in secure, HIPAA-compliant systems
+- ✅ Implement role-based access controls
+- ✅ Log all data access and modifications
+- ✅ Regular security audits
+- ✅ Data retention policies
+- ✅ Incident response plans
+
+### Ethical Use Guidelines
+
+**Users commit to:**
+- ✅ Fair and non-discriminatory use
+- ✅ Transparency in model use
+- ✅ Protecting individual privacy
+- ✅ Accurate data representation
+- ✅ Responsible decision-making
+- ✅ Compliance with all applicable laws
+
+### Prohibited Uses
+
+**This software SHALL NOT be used for:**
+- ❌ Illegal discrimination in insurance or healthcare
+- ❌ Violations of privacy laws or regulations
+- ❌ Fraudulent activities or deception
+- ❌ Unauthorized use of protected health information
+- ❌ Circumventing proper regulatory processes
+- ❌ Harm to individuals or organizations
+
+### No Liability
+
+**The authors and contributors are NOT liable for:**
+- Incorrect predictions or estimates
+- Financial losses from relying on predictions
+- Missed diagnoses or health complications
+- Insurance denial or policy changes
+- Regulatory violations by users
+- Any damages arising from use or misuse
+
+### User Responsibility
+
+By using this software, you acknowledge:
+- You understand these limitations
+- You will not use for prohibited purposes
+- You assume all risk and responsibility
+- You will comply with all applicable laws
+- You will use professional judgment
+- You will not hold authors liable
+
+### Emergency Medical Situations
+
+⚠️ **IF YOU SUSPECT A MEDICAL EMERGENCY:**
+- **DO NOT** rely on this tool for diagnosis
+- **IMMEDIATELY** contact emergency services
+- **CALL 911** (or your local emergency number)
+- **SEEK** professional medical evaluation
+
+### Insurance Emergency
+
+⚠️ **FOR URGENT INSURANCE MATTERS:**
+- Contact your insurance provider directly
+- Consult a licensed insurance agent
+- Reach out to your state's insurance commissioner if needed
+
+### Contact for Questions
+
+For questions about this disclaimer or the software:
+- 📧 Email: [your.email@example.com]
+- 🌐 Website: [your-website.com]
+- 📱 Support: [support contact]
+
+---
+
+## Disclaimer Acceptance
+
+**By using this software, you acknowledge and accept all terms of this disclaimer.**
+
+If you do not agree with these terms, DO NOT USE THIS SOFTWARE.
+
+---
+
+**Last Updated**: January 2025  
+**Version**: 1.0.0  
+**Severity**: Critical - Please read carefully
+
+---
+
+## Additional Resources
+
+- [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html)
+- [GDPR Official Guide](https://gdpr-info.eu/)
+- [CCPA Official Information](https://oag.ca.gov/privacy/ccpa)
+- [CMS Medicare Guidelines](https://www.cms.gov/)
+- [Insurance Regulatory Information](https://www.naic.org/)
+
+---
+
+**⚠️ This disclaimer is legally binding. Ensure all users read and understand before using the software.**
