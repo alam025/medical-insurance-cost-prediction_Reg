@@ -9,6 +9,7 @@
 
 ---
 
+
 ## 🏥 Project Overview
 
 This healthcare analytics system predicts medical insurance costs based on individual demographic and lifestyle factors. Using **Linear Regression**, the model analyzes relationships between age, BMI, smoking status, and other variables to provide accurate cost predictions for insurance companies and individuals.
