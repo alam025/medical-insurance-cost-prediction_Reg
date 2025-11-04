@@ -1,475 +1,598 @@
-# 💊 Medical Insurance Cost Prediction
+<div align="center">
 
-> **Advanced machine learning system for predicting healthcare insurance costs using Linear Regression and demographic analysis**
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,25:0077b6,50:03045e,75:023e8a,100:00b4d8&height=350&section=header&text=MEDICAL%20INSURANCE%20AI&fontSize=100&fontColor=fff&animation=twinkling&fontAlignY=38&desc=💊%20Predict%20Healthcare%20Costs%20with%20Machine%20Learning%20🏥&descAlignY=55&descSize=22)
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?logo=github)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
+<img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="200" />
 
----
+<br><br>
 
+## 🏥 AI-POWERED HEALTHCARE COST PREDICTION 🏥
 
-## 🏥 Project Overview
+<br>
 
-This healthcare analytics system predicts medical insurance costs based on individual demographic and lifestyle factors. Using **Linear Regression**, the model analyzes relationships between age, BMI, smoking status, and other variables to provide accurate cost predictions for insurance companies and individuals.
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pill.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Stethoscope.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Syringe.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Medical%20Symbol.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Drop%20of%20Blood.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hospital.png" width="80" />
 
-### 💡 Key Features
+<br><br>
 
-- ✅ **Accurate Cost Prediction** - R² Score: 0.75 (75% variance explained)
-- ✅ **Demographic Analysis** - Age, gender, BMI, family status, smoking behavior
-- ✅ **Data Visualization** - 8+ distribution and analysis charts
-- ✅ **Categorical Encoding** - Sex, smoker status, regional analysis
-- ✅ **Model Persistence** - Save and reuse trained model
-- ✅ **Real-time Predictions** - Instant cost estimation for new customers
-- ✅ **Healthcare Insights** - Smoking impact analysis, BMI correlation
-- ✅ **Production Ready** - Error handling, comprehensive documentation
+[![Python](https://img.shields.io/badge/Python-3.8+-00b4d8?style=for-the-badge&logo=python&logoColor=white&labelColor=03045e)](https://python.org)
+[![ML](https://img.shields.io/badge/Machine_Learning-AI-0077b6?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=03045e)](https://scikit-learn.org)
+[![Status](https://img.shields.io/badge/STATUS-ACTIVE-00f5ff?style=for-the-badge&labelColor=03045e)]()
+[![Accuracy](https://img.shields.io/badge/ACCURACY-75%25-00d9ff?style=for-the-badge&labelColor=03045e)]()
 
----
+<br>
 
-## 📊 Dataset Overview
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
 
-### Size & Scope
-- **Total Records**: 1,338 insurance customers
-- **Features**: 6 dimensions
-- **Target Variable**: Annual insurance charges (USD)
-- **Time Period**: Historical data
+<br><br>
 
-### Features
-
-| Feature | Type | Description | Range |
-|---------|------|-------------|-------|
-| 🎂 **Age** | Numeric | Customer age | 18-64 years |
-| 👤 **Sex** | Categorical | Gender (Male/Female) | 2 categories |
-| ⚖️ **BMI** | Numeric | Body Mass Index | 16-54 kg/m² |
-| 👨‍👩‍👧‍👦 **Children** | Numeric | Number of dependents | 0-5 children |
-| 🚬 **Smoker** | Categorical | Smoking status | Yes/No |
-| 🗺️ **Region** | Categorical | Geographic region | 4 regions |
-| 💰 **Charges** | Numeric (Target) | Annual insurance cost | $1.1K-$63.7K |
-
----
-
-## 🎯 Customer Segments by Insurance Cost
-
-```
-┌─────────────────────────────────────────────────────┐
-│  Budget Segment (Under $10K)        │ 45% of customers │
-├─────────────────────────────────────────────────────┤
-│  Standard Segment ($10K-$30K)       │ 35% of customers │
-├─────────────────────────────────────────────────────┤
-│  Premium Segment (Over $30K)        │ 20% of customers │
-└─────────────────────────────────────────────────────┘
-```
-
----
-
-## 📈 Model Performance
-
-### Training Metrics
-```
-┌──────────────────────────────────┐
-│ Training Performance             │
-├──────────────────────────────────┤
-│ R² Score (Training):    0.7494   │
-│ Mean Squared Error:     32.2M    │
-│ Mean Absolute Error:    $4.1K    │
-│ Model Accuracy:         74.94%   │
-└──────────────────────────────────┘
-```
-
-### Testing Metrics
-```
-┌──────────────────────────────────┐
-│ Testing Performance              │
-├──────────────────────────────────┤
-│ R² Score (Testing):     0.7289   │
-│ Mean Squared Error:     35.8M    │
-│ Mean Absolute Error:    $4.8K    │
-│ Model Accuracy:         72.89%   │
-└──────────────────────────────────┘
-```
-
-### Key Insights
-- 🎯 **Smoking Impact**: +$23,615 average increase in annual charges
-- 📊 **Age Correlation**: Strong positive correlation (0.65)
-- 🏥 **BMI Factor**: Significant predictor (coefficient: 339)
-- 🌍 **Regional Variation**: 15-25% cost differences by region
-
----
-
-## 🛠️ Technology Stack
-
-### Data Science & ML
-- **NumPy** - Numerical computing
-- **Pandas** - Data manipulation & analysis
-- **Matplotlib** - Static visualizations
-- **Seaborn** - Statistical data visualization
-- **scikit-learn** - Machine learning algorithms
-
-### Core Libraries
-```
-numpy>=1.24.0
-pandas>=2.0.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-scikit-learn>=1.3.0
-```
-
----
-
-## 📥 Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-- Virtual environment (recommended)
-
-### Quick Setup
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/medical-insurance-cost-prediction.git
-cd medical-insurance-cost-prediction
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Verify installation
-python -c "import sklearn, pandas; print('✅ All packages installed!')"
-```
-
----
-
-## 🚀 Quick Start
-
-### Run Full Analysis
-
-```bash
-python "Medical Insurance Cost Prediction.py"
-```
-
-### Make Predictions
-
-```python
-import numpy as np
-from sklearn.linear_model import LinearRegression
-import pickle
-
-# Load trained model
-with open('models/insurance_prediction_model.pkl', 'rb') as f:
-    model = pickle.load(f)
-
-# Prepare input: [age, sex, bmi, children, smoker, region]
-# Example: 31-year-old female, BMI 25.74, no children, non-smoker, southeast
-input_data = np.array([[31, 1, 25.74, 0, 1, 0]])
-
-# Predict insurance cost
-prediction = model.predict(input_data)
-print(f"💰 Predicted Annual Insurance Cost: ${prediction[0]:,.2f}")
-```
-
----
-
-## 📊 Output Files Generated
-
-The script generates comprehensive analysis outputs:
-
-| File | Description | Type |
-|------|-------------|------|
-| 📈 `age_distribution.png` | Age distribution histogram | Chart |
-| 👥 `sex_distribution.png` | Gender breakdown | Chart |
-| ⚖️ `bmi_distribution.png` | BMI distribution | Chart |
-| 👨‍👩‍👧 `children_distribution.png` | Dependent count analysis | Chart |
-| 🚬 `smoker_distribution.png` | Smoking status breakdown | Chart |
-| 💰 `charges_distribution.png` | Cost distribution | Chart |
-| 📊 `correlation_heatmap.png` | Feature correlations | Chart |
-| 🎯 `prediction_vs_actual.png` | Model accuracy plot | Chart |
-| 📁 `insurance_predictions.csv` | Predicted costs with features | Data |
-| 💾 `insurance_prediction_model.pkl` | Trained model | Model |
-
----
-
-## 💻 Code Structure
-
-### Main Script Flow
-
-```
-1. 📥 Import Dependencies
-   └─ NumPy, Pandas, Matplotlib, Seaborn, scikit-learn
-
-2. 📊 Data Collection & Loading
-   └─ Load insurance.csv into pandas DataFrame
-
-3. 🔍 Exploratory Data Analysis
-   ├─ Display first 5 rows
-   ├─ Check dimensions (1,338 × 6)
-   ├─ Dataset info & data types
-   ├─ Statistical summary
-   └─ Visualize distributions
-
-4. ⚠️ Missing Value Detection
-   └─ No missing values found ✅
-
-5. 🏷️ Categorical Encoding
-   ├─ Sex: male→0, female→1
-   ├─ Smoker: yes→0, no→1
-   └─ Region: southeast→0, southwest→1, northeast→2, northwest→3
-
-6. ✂️ Feature-Target Separation
-   ├─ X: demographic features (6 features)
-   └─ Y: insurance charges (target)
-
-7. 📋 Train-Test Split
-   ├─ Training set: 80% (1,070 samples)
-   └─ Testing set: 20% (268 samples)
-
-8. 🤖 Model Training
-   └─ Linear Regression fit on training data
-
-9. 📈 Model Evaluation
-   ├─ Training R² Score: 0.7494
-   └─ Testing R² Score: 0.7289
-
-10. 🎯 Prediction System
-    └─ Real-time cost prediction for new customers
-```
-
----
-
-## 🎓 Machine Learning Concepts
-
-### Linear Regression
-
-Linear Regression finds the best-fit line through data points, minimizing prediction errors.
-
-**Model Equation:**
-```
-Charges = β₀ + β₁(Age) + β₂(BMI) + β₃(Smoker) + ... + ε
-```
-
-**Why Linear Regression?**
-- Simple and interpretable
-- Fast training
-- Good for continuous variables
-- Excellent baseline model
-- Healthcare interpretability
-
-### Model Training Process
-
-1. **Load Data** → Load 1,338 insurance records
-2. **Feature Engineering** → Encode categorical variables
-3. **Data Splitting** → 80/20 train-test split
-4. **Model Fit** → Find optimal coefficients
-5. **Evaluation** → Calculate R² and errors
-6. **Prediction** → Estimate costs for new customers
-
----
-
-## 🏥 Healthcare Applications
-
-### Insurance Companies
-- ✅ Underwriting automation
-- ✅ Premium calculation
-- ✅ Risk assessment
-- ✅ Fraud detection
-
-### Healthcare Providers
-- ✅ Cost estimation for patients
-- ✅ Healthcare planning
-- ✅ Billing optimization
-- ✅ Insurance coverage prediction
-
-### Individuals
-- ✅ Personal cost estimation
-- ✅ Budget planning
-- ✅ Health impact assessment
-- ✅ Lifestyle change ROI
-
-### Policy Makers
-- ✅ Healthcare trends analysis
-- ✅ Premium structure review
-- ✅ Risk factor identification
-- ✅ Public health insights
-
----
-
-## 💡 Key Insights from Data
-
-### 🚬 Smoking Impact
-- **Non-Smokers**: Average cost $8,434/year
-- **Smokers**: Average cost $32,050/year
-- **Difference**: +$23,615 annually (280% increase!)
-
-### 📊 Age Analysis
-- **Age 18-25**: Average $3,745/year
-- **Age 45-64**: Average $18,200/year
-- **Trend**: Linear increase with age
-
-### 🗺️ Regional Breakdown
-- **Southeast**: Average $9,046/year
-- **Southwest**: Average $8,896/year
-- **Northeast**: Average $10,055/year
-- **Northwest**: Average $9,214/year
-
-### 👥 Demographics
-- **Female**: Average $11,385/year
-- **Male**: Average $12,569/year
-- **With Children**: Slight cost increase
-- **High BMI**: Significant cost correlation
-
----
-
-## 📚 Usage Examples
-
-### Example 1: Predict for Healthy Individual
-```python
-# 28-year-old male, BMI 22, no smoking, 1 child, southeast
-prediction = model.predict([[28, 0, 22, 1, 1, 0]])
-# Result: ~$3,200-3,800 annually
-```
-
-### Example 2: Predict for High-Risk Individual
-```python
-# 55-year-old female, BMI 28, smoker, no children, northeast
-prediction = model.predict([[55, 1, 28, 0, 0, 2]])
-# Result: ~$31,000-35,000 annually
-```
-
-### Example 3: Batch Prediction
-```python
-import pandas as pd
-
-# Load new customers
-new_customers = pd.read_csv('new_customers.csv')
-predictions = model.predict(new_customers[features])
-new_customers['Predicted_Cost'] = predictions
-new_customers.to_csv('predictions.csv', index=False)
-```
-
----
-
-## 🔐 Data Privacy & Ethics
-
-### HIPAA Compliance
-- No personally identifiable information (PII) stored
-- Anonymized datasets for analysis
-- Secure model predictions
-
-### Ethical Considerations
-- ✅ Fair pricing across demographics
-- ✅ No discriminatory patterns
-- ✅ Transparent cost factors
-- ✅ Accessible predictions
-
-### Disclaimers
-⚠️ **This model is for estimation purposes only**
-- Actual insurance costs may vary
-- Consult licensed insurance professionals
-- Not a substitute for professional insurance advice
-- Use only with proper authorization
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Areas for Contribution:**
-- 🎨 Enhanced visualizations
-- 🚀 Model optimization (Ridge, Lasso, Polynomial)
-- 📊 Additional features (pre-existing conditions, medications)
-- 🧪 Unit tests and validation
-- 📝 Documentation improvements
-- 🌐 Multi-language support
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
-
----
-
-## 📞 Support & Questions
-
-- 📧 **Issues**: Open an issue on [GitHub Issues](https://github.com/yourusername/medical-insurance-cost-prediction/issues)
-- 💬 **Discussions**: Start a discussion in [GitHub Discussions](https://github.com/yourusername/medical-insurance-cost-prediction/discussions)
-- 📖 **Documentation**: Check [docs/](docs/) folder for detailed guides
-- 🆘 **Emergency**: For urgent healthcare matters, contact emergency services
-
----
-
-## 🎯 Skills Demonstrated
-
-- ✅ Data Analysis & Manipulation (Pandas, NumPy)
-- ✅ Exploratory Data Analysis (EDA)
-- ✅ Data Preprocessing & Encoding
-- ✅ Machine Learning Implementation
-- ✅ Model Evaluation & Metrics
-- ✅ Data Visualization
-- ✅ Predictive Analytics
-- ✅ Healthcare Domain Knowledge
-- ✅ Python Programming
-- ✅ Linear Regression Theory
-
----
-
-## 🚀 Future Enhancements
-
-- [ ] Polynomial Regression models
-- [ ] Ridge & Lasso Regression
-- [ ] Gradient Boosting Models (XGBoost, LightGBM)
-- [ ] REST API for predictions
-- [ ] Interactive web dashboard
-- [ ] Real-time model updates
-- [ ] A/B testing framework
-- [ ] Mobile app integration
-
----
-
-## 📈 Repository Statistics
-
-```
-Total Commits:    45+
-Branches:         4
-Documentation:    8 files
-Test Coverage:    85%
-Code Quality:     A+
-```
-
----
-
-## 🌟 Star History
-
-⭐ If this project helped you, please star it! Your support helps others discover this resource.
-
----
-
-## 👨‍💼 About the Author
-
-Created with ❤️ for healthcare analytics and machine learning enthusiasts.
-
-**Connect with me:**
-- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)
-- 🐙 [GitHub](https://github.com/yourusername)
-- 📧 Email: your.email@example.com
-
----
-
-**Last Updated**: January 2025  
-**Version**: 1.0.0  
-**Status**: ✅ Production Ready
+</div>
 
 ---
 
 <div align="center">
 
-### Made with ❤️ for Healthcare Analytics
+## 💉 THE PROBLEM WE SOLVE 💉
 
-**Give us a ⭐ if you found this helpful!**
+<br>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Thermometer.png" width="150" />
+<h2>❌ BEFORE</h2>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Worried%20Face.png" width="100" />
+<h3>Unpredictable Costs</h3>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Money-Mouth%20Face.png" width="100" />
+<h3>No Transparency</h3>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Anxious%20Face%20with%20Sweat.png" width="100" />
+<h3>Complex Process</h3>
+</td>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Brain.png" width="150" />
+<h2>✅ AFTER</h2>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" width="100" />
+<h3>Instant Predictions</h3>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Sunglasses.png" width="100" />
+<h3>75% Accuracy</h3>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="100" />
+<h3>AI-Powered</h3>
+</td>
+</tr>
+</table>
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="100">
+
+<br>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🔬 HOW IT WORKS 🔬
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="150">
+
+<br><br>
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="33%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clipboard.png" width="120" />
+<h2>📋 STEP 1</h2>
+<h3>Input Health Data</h3>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Birthday%20Cake.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Person%20Running.png" width="60" />
+</td>
+<td align="center" width="33%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Brain.png" width="120" />
+<h2>🧠 STEP 2</h2>
+<h3>AI Analysis</h3>
+<img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100" />
+</td>
+<td align="center" width="33%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Money%20Bag.png" width="120" />
+<h2>💰 STEP 3</h2>
+<h3>Get Cost Prediction</h3>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" width="60" />
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 🚬 SMOKING IMPACT - 280% MORE COST! 🚬
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="150">
+
+<br><br>
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+
+### 😇 NON-SMOKERS 😇
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Halo.png" width="200" />
+
+# 💚 $8,434/year 💚
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Thumbs%20Up.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sparkles.png" width="80" />
+
+</td>
+<td align="center" width="50%">
+
+### 😵 SMOKERS 😵
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Spiral%20Eyes.png" width="200" />
+
+# 🔴 $32,050/year 🔴
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Thumbs%20Down.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Broken%20Heart.png" width="80" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" width="80" />
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<br>
+
+# ⚠️ +$23,615 MORE! ⚠️
+
+<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="150">
+
+<br><br>
+
+</div>
+
+---
+
+<div align="center">
+
+## 📊 DATASET - 1,338 REAL PATIENTS 📊
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="150">
+
+<br><br>
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Birthday%20Cake.png" width="100" />
+<h3>AGE</h3>
+<h4>18-64 years</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20and%20Woman%20Holding%20Hands.png" width="100" />
+<h3>GENDER</h3>
+<h4>Male/Female</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Person%20Running.png" width="100" />
+<h3>BMI</h3>
+<h4>16-54 kg/m²</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Family.png" width="100" />
+<h3>CHILDREN</h3>
+<h4>0-5 kids</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Cigarette.png" width="100" />
+<h3>SMOKER</h3>
+<h4>Yes/No</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/World%20Map.png" width="100" />
+<h3>REGION</h3>
+<h4>4 zones</h4>
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 🎯 75% ACCURACY! 🎯
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257469-8818d0f0-df85-4ffa-bd5c-7e005d0ae2ff.gif" width="150">
+
+<br><br>
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="150" />
+<h2>📈 TRAINING</h2>
+<h1>74.94%</h1>
+<h3>R² Score</h3>
+</td>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Direct%20Hit.png" width="150" />
+<h2>🎯 TESTING</h2>
+<h1>72.89%</h1>
+<h3>R² Score</h3>
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257470-1db3117a-c337-4eed-b3f3-7d3b1f8c8e0f.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 🛠️ TECHNOLOGY STACK 🛠️
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="150">
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=python,sklearn,tensorflow&theme=dark" width="200" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white&labelColor=03045e" />
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&labelColor=03045e" />
+<img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logoColor=white&labelColor=03045e" />
+<img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logoColor=white&labelColor=03045e" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=03045e" />
+
+<br><br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 🚀 QUICK START 🚀
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600">
+
+</div>
+
+```bash
+# 1️⃣ Clone Repository
+git clone https://github.com/yourusername/medical-insurance-prediction.git
+
+# 2️⃣ Install Requirements  
+pip install -r requirements.txt
+
+# 3️⃣ Run Prediction
+python "Medical Insurance Cost Prediction.py"
+```
+
+<div align="center">
+
+<br>
+
+### 💉 MAKE A PREDICTION 💉
+
+</div>
+
+```python
+# Load Model
+model = pickle.load(open('model.pkl', 'rb'))
+
+# Your Data: [age, sex, bmi, children, smoker, region]
+data = np.array([[31, 1, 25.74, 0, 1, 0]])
+
+# Predict
+cost = model.predict(data)
+print(f"💰 Cost: ${cost[0]:,.2f}/year")
+```
+
+<div align="center">
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="100" />
+
+### ⚡ INSTANT RESULTS! ⚡
+
+</div>
+
+---
+
+<div align="center">
+
+## 🏥 WHO USES THIS? 🏥
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="150">
+
+<br><br>
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hospital.png" width="150" />
+<h2>🏥 Insurance<br>Companies</h2>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Woman%20Health%20Worker.png" width="150" />
+<h2>👩‍⚕️ Healthcare<br>Providers</h2>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Office%20Worker.png" width="150" />
+<h2>👨‍💼 Individuals</h2>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Technologist.png" width="150" />
+<h2>👨‍💻 Data<br>Scientists</h2>
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 📊 8+ VISUALIZATIONS 📊
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="150">
+
+<br><br>
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Decreasing.png" width="80" />
+<h4>Age Distribution</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="80" />
+<h4>BMI Analysis</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="80" />
+<h4>Cost Distribution</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" width="80" />
+<h4>Correlation Map</h4>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man.png" width="80" />
+<h4>Gender Stats</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Cigarette.png" width="80" />
+<h4>Smoking Impact</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20Showing%20Americas.png" width="80" />
+<h4>Regional Costs</h4>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Direct%20Hit.png" width="80" />
+<h4>Accuracy Plot</h4>
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 💊 SUPPORT THIS PROJECT 💊
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Folded%20Hands.png" width="150" />
+
+<br>
+
+### If this helped you, support my work! ☕
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Money%20with%20Wings.png" width="100" />
+
+<br>
+
+## 💳 PayPal: `malam0007`
+
+## 💰 UPI (India): `alammodassir007@okicici`
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="120" />
+
+<br>
+
+### Your support keeps this project alive! 💚
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## ⭐ STAR THIS REPO! ⭐
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" width="150" />
+
+<br>
+
+### Give us a ⭐ if you found this helpful!
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" width="100" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" width="100" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" width="100" />
+
+<br>
+
+### Stars help others discover this project!
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 🎓 SKILLS DEMONSTRATED 🎓
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png" width="120" />
+
+<br>
+
+`Machine Learning` • `Data Science` • `Python` • `Pandas` • `NumPy`  
+`Matplotlib` • `Seaborn` • `scikit-learn` • `Linear Regression`  
+`Healthcare Analytics` • `Predictive Modeling` • `Statistical Analysis`
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+## 📞 CONNECT 📞
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" width="120" />
+
+<br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=03045e)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=03045e)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=03045e)](mailto:your.email@example.com)
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="150">
+
+</div>
+
+---
+
+<div align="center">
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" width="40" /> **Built with passion for Healthcare AI** <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" width="40" />
+
+<br>
+
+Made with <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png" width="30" /> by **Your Name**
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pill.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Stethoscope.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Syringe.png" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Medical%20Symbol.png" width="60" />
+
+<br><br>
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,25:0077b6,50:03045e,75:023e8a,100:00b4d8&height=200&section=footer)
 
 </div>
