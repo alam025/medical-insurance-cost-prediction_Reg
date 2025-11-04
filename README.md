@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,25:0077b6,50:03045e,75:023e8a,100:00b4d8&height=350&section=header&text=MEDICAL%20INSURANCE%20AI&fontSize=80&fontColor=fff&animation=twinkling&fontAlignY=38&desc=💊%20Predict%20Healthcare%20Costs%20with%20Machine%20Learning%20🏥&descAlignY=55&descSize=22)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00b4d8,25:0077b6,50:03045e,75:023e8a,100:00b4d8&height=350&section=header&text=MEDICAL%20INSURANCE%20AI&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=38&desc=💊%20Predict%20Healthcare%20Costs%20with%20Machine%20Learning%20🏥&descAlignY=55&descSize=20)
 
 <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="200" />
 
